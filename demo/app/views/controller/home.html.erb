@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>박지하가 좋아하는 포켓몬 </title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="20200620_homework_ParkJiha.css"/>
+
+</head>
+
+<script>
+    function search() {
+        var url="https://www.pokemonkorea.co.kr/pokedex?word=%ED%8C%8C%EC%B9%98%EB%A6%AC%EC%8A%A4&characters=&area=&snumber=1&snumber2=898&sortselval=number+asc%2Cnumber_count+asc&typetextcs=_________________"
+        window.open(url);
+    }    
+        
+    
+    function like() {
+        alert("You Like IT!교수님 이 기능을 구현하고 싶어 여러번 서치하며 도전하였으나 실패하였습니다ㅠㅠ혹시 도움 주시면 정말 감사드리겠습니다...")
+    }
+</script>
+
+<body class="wrap">
+<div class="bar"></div>
+
+<h1 class="title">포켓몬 Archive</h1>
+<div class="link-area">
+    <div class="exp">
+        <h3>내가 좋아하는 포켓몬들입니다! </h3>
+        <p>(사진을 클릭하면 해당 포켓몬의 <span style="color: #0066CC">도감 설명</span>으로 이동합니다 )</p>
+    </div>
+    
+    <div class="input-group flex-nowrap inputbox">
+        <p><a href="https://www.pokemonkorea.co.kr/pokedex#pokedex_311">도감</a> 에서 검색합니다</p>
+        
+        <input type="text" id="keyword" class="input-form" placeholder="'파치리스'를 입력해보세요." aria-label="포켓몬 이름 " aria-describedby="addon-wrapping">
+        <button onclick=search() class="addbutton">
+            검색하기
+        </button>
+    </div>
+</div>
+
+
+<div class="best-pokemon">
+    <p class="best-title"><span class="num">#1</span> 제일 좋아하는 포켓몬 </p>
+<hr>
+
+<div class="card pokemoncard" style="width: 30vw;">
+    <a href="https://www.pokemonkorea.co.kr/pokedex/view/508?word=%ED%8C%8C%EC%B9%98%EB%A6%AC%EC%8A%A4&characters=&area=&snumber=1&snumber2=898&typetextcs=_________________&sortselval=number%20asc,number_count%20asc" class="card-img-top imgbig">
+        <img src="https://data1.pokemonkorea.co.kr/newdata/pokedex/full/041701.png"class="card-img-top imgbig" alt="...">
+    </a>
+    <div class="card-body pokemoninfo">
+      <h5 class="card-title">No.417 파치리스 </h5>
+      <p class="card-text">전기 다람쥐 포켓몬 </p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" style="background-color: #FFD700;color: white; width: fit-content;">전기 </li>
+      <li class="list-group-item" >0.4m ' 3.9kg</li>
+      <li class="list-group-item">도주 / 픽업 </li>
+    </ul>
+    <div class="card-body">
+        <ol type="1">
+            <li><span style="color: #6BB6C9">도주</span> : 야생 포켓몬으로부터 반드시 도망칠 수 있다 </li>
+            <li><span style="color: #6BB6C9">픽업</span> : 상대가 사용한 도구를 주워올 때가 있다. 모험 중에도 주워온다 </span></li>
+        </ol>
+    </div>
+  </div>
+</div>
+
+
+<hr/>
+
+<table class="pokemontable">
+<thead>
+	<tr>
+		<th colspan="6" class="table-title">그 외 내가 좋아하는 포켓몬들 </th>
+	</tr>
+	<tr>
+		<th>사진 </th>
+		<th>No. 이름 </th>
+		<th>타입 </th>
+		<th>분류 </th>
+        <th>특성 </th>
+        <th>Likes </th>
+	</tr>
+</thead>
+<tbody style="text-align:center">
+    <tr>
+        <td>
+            <a href="https://www.pokemonkorea.co.kr/pokedex/view/708">
+                <img class="img"
+                     src="https://data1.pokemonkorea.co.kr/newdata/pokedex/full/058701.png">
+            </a>
+        </td>
+        <td>No. 587 에몽가</td>
+        <td>
+            <mark style="background-color: #FFD700;color: white;"> 전기</mark>
+            <mark style="background-color: lightskyblue;color: white;"> 비행</mark>
+        </td>
+        <td>하늘다람쥐포켓몬</td>
+        <td>정전기</td>
+        <td> <button onclick=like() class="like-btn"> LIKES </button> 10</td>    </tr>
+    <tr>
+        <td>
+            <a href="https://www.pokemonkorea.co.kr/pokedex/view/836">
+                <img class="img"
+                     src="https://data1.pokemonkorea.co.kr/newdata/pokedex/full/070201.png">
+            </a>
+        </td>
+        <td>No. 702 데덴네 </td>
+        <td>
+            <mark style="background-color: #FFD700;color: white;"> 전기</mark>
+            <mark style="background-color: plum;color: white;"> 페어리 </mark>
+        </td>
+        <td>안테나포켓몬 </td>
+        <td>볼주머니 / 픽업 </td>
+        <td> <button onclick=like() class="like-btn"> LIKES </button> 10</td>    </tr>
+    <tr>
+        <td>
+            <a href="https://www.pokemonkorea.co.kr/pokedex/view/37">
+                <img class="img"
+                     src="https://data1.pokemonkorea.co.kr/newdata/pokedex/full/002501.png">
+            </a>
+        </td>
+        <td>No. 025 피카츄 </td>
+        <td>
+            <mark style="background-color: #FFD700;color: white; width: "> 전기</mark>
+        </td>
+        <td>쥐포켓몬 </td>
+        <td>정전기</td>
+        <td> <button onclick=like() class="like-btn"> LIKES </button> 10</td>    </tr>
+    <tr>
+        <td>
+            <a href="https://www.pokemonkorea.co.kr/pokedex/view/923?word=%EB%94%B0%EB%9D%BC%ED%81%90&characters=&area=&snumber=1&snumber2=898&typetextcs=_________________&sortselval=number%20asc,number_count%20asc">
+                <img class="img"
+                     src="https://data1.pokemonkorea.co.kr/newdata/pokedex/full/077801.png">
+            </a>
+        </td>
+        <td>No. 778 따라큐 </td>
+        <td>
+            <mark style="background-color: darkslateblue;color: white;"> 고스트</mark>
+            <mark style="background-color: plum;color: white;"> 페어리 </mark>
+        </td>
+        <td>탈포켓몬 </td>
+        <td>탈 </td>
+        <td> <button onclick=like() class="like-btn"> LIKES </button> 10</td>    </tr>
+    <tr>
+        <td>
+            <a href="https://www.pokemonkorea.co.kr/pokedex/view/181?word=%EC%9D%B4%EB%B8%8C%EC%9D%B4&characters=&area=&snumber=1&snumber2=898&typetextcs=_________________&sortselval=number%20asc,number_count%20asc">
+                <img class="img"
+                     src="https://data1.pokemonkorea.co.kr/newdata/pokedex/full/013301.png">
+            </a>
+        </td>
+        <td>No. 133 이브이 </td>
+        <td>
+            <mark style="background-color: gray;color: white;"> 노말</mark>
+        </td>
+        <td>진화포켓몬 </td>
+        <td>도주 / 적응력 </td>
+        <td> <button onclick=like() class="like-btn"> LIKES </button> 10</td>
+    </tr>
+    <tr>
+        <td>
+            <a href="https://www.pokemonkorea.co.kr/pokedex/view/311?word=%EC%84%B8%EB%A0%88%EB%B9%84&characters=&area=&snumber=1&snumber2=898&typetextcs=_________________&sortselval=number%20asc,number_count%20asc">
+                <img class="img"
+                     src="https://data1.pokemonkorea.co.kr/newdata/pokedex/full/025101.png">
+            </a>
+        </td>
+        <td>No. 251 세레비 </td>
+        <td>
+            <mark style="background-color: deeppink;color: white;"> 에스퍼</mark>
+            <mark style="background-color: green;color: white;"> 풀</mark>
+        </td>
+        <td>시간이동포켓몬 </td>
+        <td>자연회복</td>
+        <td> <button onclick=like() class="like-btn"> LIKES </button> 10</td>
+    </tr>
+	</tbody>
+</table>
+
+<div class="bar"></div>
+</body>
+</html>
